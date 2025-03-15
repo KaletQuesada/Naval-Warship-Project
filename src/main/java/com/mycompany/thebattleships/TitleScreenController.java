@@ -4,8 +4,11 @@
  */
 package com.mycompany.thebattleships;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -14,6 +17,11 @@ import javafx.fxml.Initializable;
  * @author nilo
  */
 public class TitleScreenController implements Initializable {
+
+    @FXML
+    public void buttonAboutUs() throws IOException {
+App.setRoot("AboutUsScreen");
+    }
 
     /**
      * Initializes the controller class.
