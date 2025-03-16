@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,19 +11,32 @@
 
 <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.thebattleships.TitleScreenController">
    <children>
-      <Button layoutX="570.0" layoutY="480.0" mnemonicParsing="false" onAction="#buttonAboutUs" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: black; -fx-background-radius: 25; -fx-border-color: red; -fx-border-radius: 25;" text="About Us" textAlignment="CENTER" textFill="#837d7d">
+      <ImageView fitHeight="720.0" fitWidth="1281.0">
+         <image>
+            <Image url="@../../../media/img/backgrounds/TitleScreenBG.png" />
+         </image>
+      </ImageView>
+      <Button blendMode="ADD" layoutX="570.0" layoutY="506.0" mnemonicParsing="false" onAction="#buttonAboutUs" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: blac; -fx-background-radius: 25; -fx-border-color: green; -fx-border-radius: 25;" text="About Us" textAlignment="CENTER" textFill="#c2c0c0">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="570.0" layoutY="393.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: black; -fx-background-radius: 25; -fx-border-color: red; -fx-border-radius: 25;" text="Play" textAlignment="CENTER" textFill="#837d7d">
+      <Button blendMode="ADD" layoutX="570.0" layoutY="420.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: greem; -fx-background-radius: 25; -fx-border-color: green; -fx-border-radius: 25;" text="Play" textAlignment="CENTER" textFill="#c2c0c0">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="18.0" />
          </font>
+         <effect>
+            <Blend />
+         </effect>
       </Button>
       <Label layoutX="422.0" layoutY="14.0" prefHeight="160.0" prefWidth="437.0" text="NAVAL WARSHIP" textFill="#6b6969">
          <font>
             <Font name="Noto Sans Bassa Vah Regular" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="1209.0" layoutY="14.0" prefHeight="31.0" prefWidth="58.0" text="v1.0.2" textFill="#c2c0c0">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="17.0" />
          </font>
       </Label>
    </children>

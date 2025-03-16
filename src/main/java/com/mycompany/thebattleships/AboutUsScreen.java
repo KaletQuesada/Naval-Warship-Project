@@ -7,7 +7,7 @@ import java.io.IOException;
 public class AboutUsScreen {
 
 @FXML
-    public void buttonBackAB() throws IOException {
+    public void buttonBackAU() throws IOException {
     App.setRoot("TitleScreen");
 }
 }
