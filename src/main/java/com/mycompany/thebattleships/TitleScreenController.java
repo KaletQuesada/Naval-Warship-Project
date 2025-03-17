@@ -7,7 +7,7 @@ package com.mycompany.thebattleships;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
@@ -19,8 +19,18 @@ import javafx.fxml.Initializable;
 public class TitleScreenController implements Initializable {
 
     @FXML
+    public void exitGame(){
+        Platform.exit();
+    }
+
+    @FXML
     public void buttonAboutUs() throws IOException {
-App.setRoot("AboutUsScreen");
+        App.setRoot("AboutUsScreen");
+    }
+
+    @FXML
+    public void buttonPlay() throws IOException{
+        App.setRoot("PlayScreen");
     }
 
     /**

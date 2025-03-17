@@ -4,10 +4,11 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-public class AboutUsScreen {
+public class AboutUsScreen extends Controllers{
 
-@FXML
-    public void buttonBackAU() throws IOException {
-    App.setRoot("TitleScreen");
-}
+    @Override
+    @FXML
+    public void backButton() throws IOException {
+        App.setRoot("TitleScreen");
+    }
 }

@@ -1,0 +1,6 @@
+.choice-box .label{
+	-fx-text-fill: c2c0c0;
+}
+.choice-box .menu-item .label{
+	-fx-text-fill: black;
+}

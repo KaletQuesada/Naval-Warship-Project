@@ -16,12 +16,12 @@
             <Image url="@../../../media/img/backgrounds/TitleScreenBG.png" />
          </image>
       </ImageView>
-      <Button blendMode="ADD" layoutX="570.0" layoutY="506.0" mnemonicParsing="false" onAction="#buttonAboutUs" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: blac; -fx-background-radius: 25; -fx-border-color: green; -fx-border-radius: 25;" text="About Us" textAlignment="CENTER" textFill="#c2c0c0">
+      <Button blendMode="ADD" layoutX="570.0" layoutY="506.0" mnemonicParsing="false" onAction="#buttonAboutUs" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: blac; -fx-background-radius: 25; -fx-border-color: green; -fx-border-radius: 25;" text="ABOUT US" textAlignment="CENTER" textFill="#c2c0c0">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="18.0" />
          </font>
       </Button>
-      <Button blendMode="ADD" layoutX="570.0" layoutY="420.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: greem; -fx-background-radius: 25; -fx-border-color: green; -fx-border-radius: 25;" text="Play" textAlignment="CENTER" textFill="#c2c0c0">
+      <Button blendMode="ADD" layoutX="570.0" layoutY="420.0" mnemonicParsing="false" onAction="#buttonPlay" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: greem; -fx-background-radius: 25; -fx-border-color: green; -fx-border-radius: 25;" text="PLAY" textAlignment="CENTER" textFill="#c2c0c0">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="18.0" />
          </font>
@@ -39,5 +39,10 @@
             <Font name="DejaVu Serif Condensed Bold" size="17.0" />
          </font>
       </Label>
+      <Button fx:id="exitGameButton" blendMode="ADD" layoutX="570.0" layoutY="591.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="65.0" prefWidth="141.0" style="-fx-background-color: blac; -fx-background-radius: 25; -fx-border-color: green; -fx-border-radius: 25;" text="EXIT GAME" textAlignment="CENTER" textFill="#c2c0c0">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
