@@ -21,6 +21,10 @@ public class PlayScreen extends Controllers {
         );
         difficultyChoiceBox.setItems(options);
     }
+    @FXML
+    public void startGameButton() throws IOException{
+        App.setRoot("playground");
+    }
 
     @Override
     @FXML
